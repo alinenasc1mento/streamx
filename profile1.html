@@ -1,0 +1,354 @@
+<html>
+
+		<head>
+			<title> Stream X </title>
+			<meta charset="utf-8" />
+			<link rel="stylesheet" href="css/style.css" type="text/css" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				 
+			 
+			<link rel="icon" href="img/favicon.png">
+			<script src="js/script.js"></script>
+			<script src="js/js.js"></script>
+			<!--<script src="js/scripts.js"></script> -->
+			
+		</head>
+ 
+		
+		<body class="body1">
+		 <header class="header">
+				<div class="logo1">
+			 <a href="index.html"><img src="img/logologo.png" /> </a>
+	
+				</div>
+		 <div class="hamburguer-menu">
+  <div class="hamburguer-icon">&#9776;</div>
+
+				
+				<nav>
+			  <ul class="menu">
+				<li><a href="#">Início</a></li>
+				<li><a href="#">Seriados</a></li>
+				<li><a href="#">Filmes</a></li>
+				<li><a href="#">Navegar por gênero</a></li>
+				<li><a href="#">Minha lista</a></li>
+			  </ul>
+			</nav>	</div>
+			
+			
+			<script>
+  const hamburguerMenu = document.querySelector('.hamburguer-menu');
+  const hamburguerIcon = document.querySelector('.hamburguer-icon');
+
+  hamburguerIcon.addEventListener('click', function () {
+    hamburguerMenu.classList.toggle('active');
+  });
+</script>
+			
+			<div class="perfil1-wrapper">
+      <div class="perfil1">
+        <a href="#"> <img src="img/perfil1.png" alt="Perfil" onclick="toggleMenu()"> </a>
+      </div>
+
+      <div class="menu-perfil" id="menuPerfil">
+        <ul>
+          <li><a href="profile2.html"> <img src="img/perfil2.png" /> <div class="perfil-1">Daenerys  </div></a></li>
+          <li><a href="profile3.html"> <img src="img/perfil3.png" /> <div class="perfil-1-1">Lexa </div></a></li>
+		   <li><a href="#">Configurar Perfil</a></li>
+        </ul>
+      </div>
+    </div>
+			
+			</header>
+			
+			 <div class="carousel-container">
+    <div class="carousel">
+      <div class="v-item">
+        <img src="img/prometheus.png" />
+        <div class="v-info">Prometheus
+          <p> Uma equipe de cientistas embarca em uma jornada espacial <br>
+            para descobrir a verdade sobre a origem da raça humana. <br>
+            No planeta de destino, eles encontram criaturas poderosas e revelações assustadoras. </p>
+          <button class="botao-detalhes" onclick="abrirPopUp('Prometheus', 'Uma equipe de cientistas embarca em uma jornada espacial para descobrir a verdade sobre a origem da raça humana. No planeta de destino, eles encontram criaturas poderosas e revelações assustadoras.', 'Elizabeth Shaw (Noomi Rapace) / David - 8 - Walter (Michael Fassbender) /  Meredith Vickers (Charlize Theron) / Janek (Idris Elba) ', 'prometheus')">Mais Detalhes</button>
+        </div>
+      </div>
+      <div class="v-item">
+        <img src="img/blackwidow.png" />
+        <div class="v-info">Viúva Negra
+          <p> Ao nascer, a Viúva Negra, então conhecida como Natasha Romanova,<br>
+            é entregue à KGB, que a prepara para se tornar sua agente suprema. <br>
+            Porém, o seu próprio governo tenta matá-la quando a União Soviética se desfaz. </p>
+          <button class="botao-detalhes" onclick="abrirPopUp('Viúva Negra', 'Em Viúva Negra, acompanhamos a vida de Natasha Romanoff  após os eventos de Guerra Civil. Se escondendo do governo norte-americano devido a sua aliança com o time do Capitão América. ', 'Natasha Romanoff - Black Widow (Scarlett Johansson) / Yelena Belova (Florence Pugh) / Melina (Rachel Weiz) / Alexei (David Harbour) ', 'viuvanegra')">Mais Detalhes</button>
+        </div>
+      </div>
+      <div class="v-item">
+        <img src="img/aorigem.png" />
+        <div class="v-info">A Origem
+          <p> Em um mundo onde é possível entrar na mente humana, <br>
+            Cobb (Leonardo DiCaprio) está entre os melhores na arte de roubar segredos valiosos do inconsciente, <br>
+            durante o estado de sono.</p>
+          <button class="botao-detalhes" onclick="abrirPopUp('A Origem', 'Em um mundo onde é possível entrar na mente humana, Cobb (Leonardo DiCaprio) está entre os melhores na arte de roubar segredos valiosos do inconsciente, durante o estado de sono.', 'Dominick   Dom  Cobb (Leonardo DiCaprio) / Arthur (Joseph Gordon-Levitt) / Mal (Marion Cotillard) / Ariadne (Ellen Page)' ,   'aorigem')"> Mais Detalhes </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+ 
+    function abrirPopUp(titulo, sinopse, elenco, filme) {
+      const popup = document.getElementById("popUp");
+      const tituloDiv = popup.querySelector("#tituloPopUp");
+      const sinopseDiv = popup.querySelector("#sinopsePopUp");
+      const elencoDiv = popup.querySelector("#elencoPopUp");
+
+      tituloDiv.innerText = titulo;
+      sinopseDiv.innerText = sinopse;
+      elencoDiv.innerText = elenco;
+
+       
+      popup.classList.remove( "prometheus", "viuvanegra", "aorigem" , );
+      popup.classList.add(filme);
+
+      popup.style.display = "block";
+    }
+ 
+    function fecharPopUp() {
+      const popup = document.getElementById("popUp");
+      popup.style.display = "none";
+    }
+  </script>
+
+ 		
+	 <div id="popUp">
+    <div class="popUp-content">
+      <span class="fechar-btn" onclick="fecharPopUp()">&times;</span>
+      <div id="tituloPopUp"></div>
+      <div id="sinopsePopUp"></div>
+      <div id="elencoPopUp"></div>
+      <button><a href="#">Trailer</a></button>
+      <button><a href="#">Filme</a></button>
+    </div>
+  </div>
+
+
+<div class="titulo-1">Porque você assistiu <span style="color: #ab1931">"Como consertar uma torradeira"</span></div>
+   
+ 
+
+ 
+ <div class="assistindo">
+  
+   
+  <div class="film-container">
+    <div class="film">
+      <img src="img/inteligenciaartificial.png" alt="IA" />
+      <p>A.I. - Inteligência Artificial</p>
+    </div>
+    <div class="film">
+      <img src="img/eurobo.png" alt=" " />
+      <p>Eu, robô</p>
+    </div>
+    <div class="film">
+      <img src="img/robocop.png" alt=" " />
+      <p>Robocop</p>
+    </div>
+    <div class="film">
+      <img src="img/chappie.png" alt=" " />
+      <p>Chappie</p>
+    </div>
+    <div class="film">
+      <img src="img/meuamigorobo.png" alt="" />
+      <p>Meu amigo robô</p>
+    </div>
+    <div class="film">
+      <img src="img/exterminadordofuturo.png" alt="" />
+      <p>O Exterminador do Futuro: <br> Destino Sombrio</p>
+    </div>
+    <div class="film">
+      <img src="img/walle.png" alt=" " />
+      <p>Wall-E</p>
+    </div>
+	 
+	
+	 </div>
+   
+</div>
+
+
+<div class="titulo-1">Series Premiadas</div>
+
+
+<div class="assistindo">
+  
+   
+  <div class="film-container">
+    <div class="film">
+      <a href=""><img src="img/theboys.png" alt="" /> </a>
+      <p>The boys</p>
+    </div>
+     <div class="film">
+      <a href=""><img src="img/gameofthrones.png" alt="" /> </a>
+      <p>Game of Thrones</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/strangerthings.png" alt=" " /> </a>
+      <p>Stranger Things</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/thewalkingdead.png" alt=" " /> </a>
+      <p>The Walking dead</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/killingeve.png" alt=" " /> </a>
+      <p>Killing Eve</p>
+    </div>
+    <div class="film">
+        <a href=""><img src="img/breakingbad.png" alt=" " /> </a>
+      <p>Breaking Bad</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/tbbt.png" alt=" " /> </a>
+      <p>The big bang theory</p>
+    </div>
+	 
+	
+	 </div>
+   
+</div>
+
+
+
+<div class="titulo-1">Para assistir com a <span style="color: #ab1931">família toda</span></div>
+   
+ 
+
+ 
+ <div class="assistindo">
+  
+   
+  <div class="film-container">
+    <div class="film">
+     <a href=""> <img src="img/glee.png" alt="" /> </a>
+      <p>Glee</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/gilmoregirls.png" alt=" " /> </a>
+      <p>Gilmore Girls</p>
+    </div>
+    <div class="film">
+     <a href=""> <img src="img/wandinha.png" alt=" " /> </a>
+      <p>Wandinha</p>
+    </div>
+    <div class="film">
+     <a href=""> <img src="img/boasortecharlie.png" alt=" " /> </a>
+      <p>Boa sorte, Charlie!</p>
+    </div>
+    <div class="film">
+     <a href=""> <img src="img/todomundoodeiaochris.png" alt="" /> </a>
+      <p>Todo mundo odeia o Chris</p>
+    </div>
+    <div class="film">
+     <a href=""> <img src="img/crepusculo.png" alt="" /> </a>
+      <p>Crepúsculo</p>
+    </div>
+    <div class="film">
+    <a href="">  <img src="img/velozesefuriosos.png" alt=" " /> </a>
+      <p>velozes e furiosos</p>
+    </div>
+	 
+	
+	 </div>
+   
+</div>
+ 
+ 
+ 
+<div class="titulo-1">Grandes artistas </div>
+
+
+	<div class="artistas">
+		<img src="img/jenniferlawrence.png" />  
+		   <img href="" src="img/katebeckinsale.png" />
+		 <img src="img/leonardodicaprio.png" /></a>
+		  <img src="img/merylstreep.png" /> 
+
+		</div>
+		
+		
+		
+		
+		
+	<div class="titulo-1">Brasil: <span style="color: #ab1931">top 10 filmes</span></div>
+	
+	
+	
+	<div class="assistindo">
+  
+   
+  <div class="film-container">
+    <div class="film">
+      <a href="" ><img src="img/birdboxbarcelona.png" alt="" /> </a>
+	   
+      <p>BirdBox - Barcelona</p>
+    </div>
+    <div class="film">
+      <a href=""> <img src="img/assassinatosemrastro.png" alt=" " /> </a>
+      <p>Assassinato sem rastro</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/batman.png" alt=" " /> </a>
+      <p>Batman</p>
+    </div>
+    <div class="film">
+      <a href=""> <img src="img/vingadoresultimato.png" alt=" " /> </a>
+      <p>Vingadores - Ultimato </p>
+    </div>
+    <div class="film">
+      <a href=""> <img src="img/missaoimpossivelac.png" alt="" /> </a>
+      <p>Missão Impossível:<br> acerto de contas</p>
+    </div>
+    <div class="film">
+       <a href=""> <img src="img/homemaranhaada.png" alt="" /> </a>
+      <p>Homem Aranha: <br> Através do Aranhaverso</p>
+    </div>
+    <div class="film">
+       <a href=""> <img src="img/shazamfd.png" alt=" " /> </a>
+      <p>Shazam! <br>Fúria dos Deuses</p>
+    </div>
+	 
+	
+	 </div>
+   
+</div>
+ 
+   
+
+
+
+</body>
+
+  
+
+		<footer class="footer">
+		
+		
+		<a href=""><img src="img/redessociais/facebook.png" /> </a>
+		<a href=""><img src="img/redessociais/instagram.png" /></a>
+		<a href=""><img src="img/redessociais/twitter.png" /></a>
+		<a href=""><img src="img/redessociais/tumblr.png" /></a>
+		
+		
+		<div class="footerlogo">
+		
+		<a href="index.html"><img src="img/logo.png" /></a>
+		</div>
+		
+		</footer>
+		
+		
+		
+		
+		
+
+		
+		</html>
