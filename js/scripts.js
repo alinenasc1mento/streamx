@@ -1,7 +1,7 @@
 let posicaoAtual = 0;
 const filmesContainer = document.querySelector(".film-container");
 const filmes = document.querySelectorAll(".film");
-const larguraFilme = filmes[0].offsetWidth + 20; // Adicionei 20px de margem entre os filmes
+const larguraFilme = filmes[0].offsetWidth + 20;  
 const limiteEsquerda = 0;
 const limiteDireita = (filmes.length - 3) * larguraFilme * -1;
 
