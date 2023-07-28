@@ -1,0 +1,144 @@
+ 
+        /* ediçao perfis */
+        .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-content h2{
+text-align:center;
+
+}
+.popup-content {
+    background: linear-gradient(to bottom, #1b1f4a, black);
+    border: 2px solid transparent;
+    border-color: #ab1931;
+    color: #dadada;
+    width: 300px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    text-align: center;
+	position: absolute; 
+}
+
+ 
+.popup-content label {
+    display: block;
+    margin-bottom: 5px;
+	
+}
+label{
+	
+ 
+	
+}
+.popup-content input {
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 5px;
+     
+    border-radius: 3px;
+    color: #dadada;  
+    background-color: #393e6d;  
+}
+
+ 
+
+		
+.popup-content button{
+	margin-left:2%;
+	width:50%;
+	height:auto;
+	
+	
+}
+
+
+.fechar-popup {
+    position: absolute;
+    top: 20%;  
+    right: 40%; 
+    padding: 5px 10px;
+    width: 33px;  
+    height: 25px;  
+    background-color: #ab1931;
+    color: white;
+    border: none;
+    
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+z-index: 1; }
+
+
+
+
+@media only screen and (min-width:150px) and (max-width:600px)
+{
+	
+* {
+			margin: 0px;
+			padding: 0px;
+		}
+		
+		
+		.popup-content {
+    background: linear-gradient(to bottom, #1b1f4a, black);
+    border: 2px solid transparent;
+    border-color: #ab1931;
+    color: white;
+    width: 300px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    text-align: center;
+	position: absolute; 
+}
+
+
+
+.fechar-popup {
+    position: absolute;
+    top: 19%;  
+    right: 6%; 
+    padding: 5px 10px;
+    width: 33px;  
+    height: 25px;  
+    background-color: #ab1931;
+    color: white;
+    border: none;
+    
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+z-index: 1; }
+
+
+.popup-content h2{
+text-align:center;
+margin-top:5%;
+margin-bottom:3%;
+
+}
+
+.popup-content button{
+	margin-left:2%;
+	width:50%;
+	height:auto;
+	margin-bottom:-10%;
+	
+}
+
+
+}
