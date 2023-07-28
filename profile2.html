@@ -27,11 +27,11 @@
 				
 				<nav>
 			  <ul class="menu">
-				<li><a href="#">Início</a></li>
-				<li><a href="#">Seriados</a></li>
-				<li><a href="#">Filmes</a></li>
-				<li><a href="#">Navegar por gênero</a></li>
-				<li><a href="#">Minha lista</a></li>
+				<li><a href="index.html">Início</a></li>
+				<li><a href="seriados.html">Seriados</a></li>
+				<li><a href="filmes.html">Filmes</a></li>
+				<li><a href="genero.html">Navegar por gênero</a></li>
+				<li><a href="minhalista.html">Minha lista</a></li>
 			  </ul>
 			</nav>	</div>
 			
@@ -50,17 +50,18 @@
         <a href="#"> <img src="img/perfil2.png" alt="Perfil" onclick="toggleMenu()"> </a>
       </div>
 
-      <div class="menu-perfil" id="menuPerfil">
-        <ul>
-          <li><a href="profile1.html"> <img src="img/perfil1.png" /> <div class="perfil-1">Wanda  </div></a></li>
-          <li><a href="profile3.html"> <img src="img/perfil3.png" /> <div class="perfil-1-1">Lexa </div></a></li>
-		   <li><a href="#">Configurar Perfil</a></li>
-        </ul>
-      </div>
+       <div class="menu-perfil" id="menuPerfil">
+    <ul>
+        <li><a href="profile2.html"> <img src="img/perfil1.png" /> <div id="perfil1-link" class="perfil-1">Perfil 1</div></a></li>
+        <li><a href="profile3.html"> <img src="img/perfil3.png" /> <div id="perfil3-link" class="perfil-1 "> <!--class="perfil-1-1" --> Perfil 3</div></a></li>
+      
+    </ul>
+</div>
     </div>
 			
 			</header>
 			
+			<div id="banner" class="dispositivo-grande">
 			 <div class="carousel-container">
     <div class="carousel">
       <div class="v-item">
@@ -91,7 +92,60 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> </div>
+  
+  
+  
+  <div id="banner" class="dispositivo-pequeno">
+			 <div class="carousel-container">
+    <div class="carousel">
+      <div class="v-item">
+        <img src="img/prometheus7.png" />
+        <div class="v-info">Prometheus
+          <p> Uma equipe de cientistas embarca em uma jornada espacial <br>
+            para descobrir a verdade sobre a origem da raça humana. <br>
+            No planeta de destino, eles encontram criaturas poderosas e revelações assustadoras. </p>
+          <button class="botao-detalhes" onclick="abrirPopUp('Prometheus', 'Uma equipe de cientistas embarca em uma jornada espacial para descobrir a verdade sobre a origem da raça humana. No planeta de destino, eles encontram criaturas poderosas e revelações assustadoras.', 'Elizabeth Shaw (Noomi Rapace) / David - 8 - Walter (Michael Fassbender) /  Meredith Vickers (Charlize Theron) / Janek (Idris Elba) ', 'prometheus')">Mais Detalhes</button>
+        </div>
+      </div>
+      <div class="v-item">
+        <img src="img/viuvanegra7.png" />
+        <div class="v-info">Viúva Negra
+          <p> Ao nascer, a Viúva Negra, então conhecida como Natasha Romanova,<br>
+            é entregue à KGB, que a prepara para se tornar sua agente suprema. <br>
+            Porém, o seu próprio governo tenta matá-la quando a União Soviética se desfaz. </p>
+          <button class="botao-detalhes" onclick="abrirPopUp('Viúva Negra', 'Em Viúva Negra, acompanhamos a vida de Natasha Romanoff  após os eventos de Guerra Civil. Se escondendo do governo norte-americano devido a sua aliança com o time do Capitão América. ', 'Natasha Romanoff - Black Widow (Scarlett Johansson) / Yelena Belova (Florence Pugh) / Melina (Rachel Weiz) / Alexei (David Harbour) ', 'viuvanegra')">Mais Detalhes</button>
+        </div>
+      </div>
+      <div class="v-item">
+        <img src="img/aorigem7.png" />
+        <div class="v-info">A Origem
+          <p> Em um mundo onde é possível entrar na mente humana, <br>
+            Cobb (Leonardo DiCaprio) está entre os melhores na arte de roubar segredos valiosos do inconsciente, <br>
+            durante o estado de sono.</p>
+          <button class="botao-detalhes" onclick="abrirPopUp('A Origem', 'Em um mundo onde é possível entrar na mente humana, Cobb (Leonardo DiCaprio) está entre os melhores na arte de roubar segredos valiosos do inconsciente, durante o estado de sono.', 'Dominick   Dom  Cobb (Leonardo DiCaprio) / Arthur (Joseph Gordon-Levitt) / Mal (Marion Cotillard) / Ariadne (Ellen Page)' ,   'aorigem')"> Mais Detalhes </button>
+        </div>
+      </div>
+    </div>
+  </div> </div>
+  
+  
+   <style>
+  /* Estilos para dispositivos grandes */
+  @media (max-width: 600px) {
+    .dispositivo-grande {
+      display: none; /* Oculta o elemento com o ID "banner" em dispositivos menores */
+    }
+	 
+  }
+
+  /* Estilos para dispositivos pequenos */
+  @media (min-width: 601px) {
+    .dispositivo-pequeno {
+      display: none; /* Oculta o elemento com o ID "1banner" em dispositivos maiores */
+    }
+  }
+</style>
 
 <script>
  
@@ -267,10 +321,10 @@
 
 
 	<div class="artistas">
-		<img src="img/jenniferlawrence.png" />  
-		   <img href="" src="img/katebeckinsale.png" />
-		 <img src="img/leonardodicaprio.png" /></a>
-		  <img src="img/merylstreep.png" /> 
+						<a href="jenniferlawrence.html"><img src="img/jenniferlawrence.png" />  </a>
+						<a href="katebeckinsale.html"> <img href="" src="img/katebeckinsale.png" /> </a>
+						<a href="leonardodicaprio.html"><img src="img/leonardodicaprio.png" /></a>
+						<a href="merylstreep.html"><img src="img/merylstreep.png" /> </a>
 
 		</div>
 		
@@ -346,9 +400,16 @@
 		</footer>
 		
 		
-		
-		
-		
+		 <script>
+        // Código para carregar os perfis do localStorage quando a página é carregada
+        window.onload = function () {
+            const perfil2Value = localStorage.getItem('perfil2');
+            const perfil3Value = localStorage.getItem('perfil3');
+
+            document.getElementById('perfil2-link').innerText = perfil2Value || 'Perfil 2';
+            document.getElementById('perfil3-link').innerText = perfil3Value || 'Perfil 3';
+        };
+    </script>
 
 		
 		</html>

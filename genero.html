@@ -1,0 +1,390 @@
+<html>
+
+
+<head>
+			<title> Navegar por Gênero </title>
+			<meta charset="utf-8" />
+			<link rel="stylesheet" href="css/style2.css" type="text/css" />
+			<link rel="stylesheet" href="css/style.css" type="text/css" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				 
+			 
+			<link rel="icon" href="img/favicon.png">
+			<script src="js/script.js"></script>
+			<script src="js/js.js"></script>
+			 
+			
+		</head>
+ 
+ 
+ 
+ 
+ <body>
+		 <header class="header">
+				<div class="logo1">
+			 <a href="index.html"><img src="img/logologo.png" /> </a>
+	
+				</div>
+		 <div class="hamburguer-menu">
+  <div class="hamburguer-icon">&#9776;</div>
+
+				
+				<nav>
+			  <ul class="menu">
+				<li><a href="index.html">Início</a></li>
+				<li><a href="seriados.html">Seriados</a></li>
+				<li><a href="filmes.html">Filmes</a></li>
+				<li><a href="genero.html">Navegar por gênero</a></li>
+				<li><a href="minhalista.html">Minha lista</a></li>
+			  </ul>
+			</nav>	</div>
+			
+			
+			<script>
+  const hamburguerMenu = document.querySelector('.hamburguer-menu');
+  const hamburguerIcon = document.querySelector('.hamburguer-icon');
+
+  hamburguerIcon.addEventListener('click', function () {
+    hamburguerMenu.classList.toggle('active');
+  });
+</script>
+			
+			<div class="perfil1-wrapper">
+      <div class="perfil1">
+        <a href="#"> <img src="img/perfil2.png" alt="Perfil" onclick="toggleMenu()"> </a>
+      </div>
+
+      <div class="menu-perfil" id="menuPerfil">
+        <ul>
+          <li><a href="genero.html"> <img src="img/perfil1.png" /> <div class="perfil-1">Wanda  </div></a></li>
+          <li><a href="genero.html"> <img src="img/perfil3.png" /> <div class="perfil-1-1">Lexa </div></a></li>
+		   <li><a href="#">Configurar Perfil</a></li>
+        </ul>
+      </div>
+    </div>
+			
+			</header>
+			
+			
+			
+ 
+ 
+ <div class="menu-generos">
+ <div class="titulo-1-1">
+ <div class="titulo-1">Filmes:</div> </div>
+	 <div class="menu1-container">	
+  <div class="genero" onclick="toggleMenu1()">
+      <span>Gênero</span>
+      <div class="seta"></div>
+    </div>
+    <ul class="menu1" id="menu1">
+	 
+      <li><a href="#acao">Ação</a></li>
+      <li><a href="#comedia">Comédia</a></li>
+      <li><a href="#aventura">Aventura</a></li>
+      <li><a href="#animacao">Animação</a></li>
+	     <li><a href="#romance">Romance</a></li>
+       
+    </ul>
+  </div></div>
+
+  <script>
+    function toggleMenu1() {
+      var menu1 = document.getElementById("menu1");
+      menu1.classList.toggle("active");
+    }
+  </script>
+  
+  
+  <div class="video-container">
+        <video autoplay loop muted>
+            
+            <source src="video/video1.mp4" type="video/mp4">
+            
+        </video>
+        <div class="texto-sobre-video">
+            <h1><span style="color: #ab1931">Barbie</span></h1>
+             Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita,
+			 Barbie parte para o mundo humano em busca da verdadeira felicidade.
+			 <br>Assista <span style="color: #ab1931">dia 25 de Agosto.</span> <br><br>
+			 Somente na Stream X
+			
+        </div>  </div>
+		<span class="audio-icon" onclick="toggleAudio()"></span></div>
+		
+		  
+  
+  
+  <section id="acao">
+  <div class="titulo-1">Ação:</div>
+   
+ 
+
+ 
+ <div class="assistindo">
+  
+   
+  <div class="film-container">
+    <div class="film">
+     <a href=""> <img src="img/piromaniaco.png" alt="" /> </a>
+      <p>Piromaníaco</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/fogocontrafogo.png" alt=" " /> </a>
+      <p>Fogo contra fogo</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/chamasdavinganca.png" alt=" " /> </a>
+      <p>Chamas da Vingança</p>
+    </div>
+    <div class="film">
+     <a href=""> <img src="img/coracoesemchamas.png" alt=" " /> </a>
+      <p>Corações em Chamas</p>
+    </div>
+    <div class="film">
+     <a href=""> <img src="img/agarotadacapavermelha.png" alt="" /> </a>
+      <p>A garota da capa vermelha</p>
+    </div>
+    <div class="film">
+     <a href=""> <img src="img/incendios.png" alt="" /> </a>
+      <p>Incêndios</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/vdevinganca.png" alt=" " /> </a>
+      <p>V de Vingança</p>
+    </div>
+	 
+	
+	 </div>
+   
+</div> </section>
+
+
+<section id="comedia">
+  <div class="titulo-1">Comédia:</div>
+   
+ 
+
+ 
+ <div class="assistindo">
+  
+   
+  <div class="film-container">
+    <div class="film">
+     <a href=""> <img src="img/piromaniaco.png" alt="" /> </a>
+      <p>Piromaníaco</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/fogocontrafogo.png" alt=" " /> </a>
+      <p>Fogo contra fogo</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/chamasdavinganca.png" alt=" " /> </a>
+      <p>Chamas da Vingança</p>
+    </div>
+    <div class="film">
+     <a href=""> <img src="img/coracoesemchamas.png" alt=" " /> </a>
+      <p>Corações em Chamas</p>
+    </div>
+    <div class="film">
+     <a href=""> <img src="img/agarotadacapavermelha.png" alt="" /> </a>
+      <p>A garota da capa vermelha</p>
+    </div>
+    <div class="film">
+     <a href=""> <img src="img/incendios.png" alt="" /> </a>
+      <p>Incêndios</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/vdevinganca.png" alt=" " /> </a>
+      <p>V de Vingança</p>
+    </div>
+	 
+	
+	 </div>
+   
+</div> </section>
+
+<section id="aventura">
+  <div class="titulo-1">aventura</div>
+   
+ 
+
+ 
+ <div class="assistindo">
+  
+   
+  <div class="film-container">
+    <div class="film">
+     <a href=""> <img src="img/piromaniaco.png" alt="" /> </a>
+      <p>Piromaníaco</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/fogocontrafogo.png" alt=" " /> </a>
+      <p>Fogo contra fogo</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/chamasdavinganca.png" alt=" " /> </a>
+      <p>Chamas da Vingança</p>
+    </div>
+    <div class="film">
+     <a href=""> <img src="img/coracoesemchamas.png" alt=" " /> </a>
+      <p>Corações em Chamas</p>
+    </div>
+    <div class="film">
+     <a href=""> <img src="img/agarotadacapavermelha.png" alt="" /> </a>
+      <p>A garota da capa vermelha</p>
+    </div>
+    <div class="film">
+     <a href=""> <img src="img/incendios.png" alt="" /> </a>
+      <p>Incêndios</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/vdevinganca.png" alt=" " /> </a>
+      <p>V de Vingança</p>
+    </div>
+	 
+	
+	 </div>
+   
+</div> </section>
+
+
+<section id="animacao">
+  <div class="titulo-1">Animação:</div>
+   
+ 
+
+ 
+ <div class="assistindo">
+  
+   
+  <div class="film-container">
+    <div class="film">
+     <a href=""> <img src="img/piromaniaco.png" alt="" /> </a>
+      <p>Piromaníaco</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/fogocontrafogo.png" alt=" " /> </a>
+      <p>Fogo contra fogo</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/chamasdavinganca.png" alt=" " /> </a>
+      <p>Chamas da Vingança</p>
+    </div>
+    <div class="film">
+     <a href=""> <img src="img/coracoesemchamas.png" alt=" " /> </a>
+      <p>Corações em Chamas</p>
+    </div>
+    <div class="film">
+     <a href=""> <img src="img/agarotadacapavermelha.png" alt="" /> </a>
+      <p>A garota da capa vermelha</p>
+    </div>
+    <div class="film">
+     <a href=""> <img src="img/incendios.png" alt="" /> </a>
+      <p>Incêndios</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/vdevinganca.png" alt=" " /> </a>
+      <p>V de Vingança</p>
+    </div>
+	 
+	
+	 </div>
+   
+</div> </section>
+
+<section id="romance">
+  <div class="titulo-1">Romance:</div>
+   
+ 
+
+ 
+ <div class="assistindo">
+  
+   
+  <div class="film-container">
+    <div class="film">
+     <a href=""> <img src="img/piromaniaco.png" alt="" /> </a>
+      <p>Piromaníaco</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/fogocontrafogo.png" alt=" " /> </a>
+      <p>Fogo contra fogo</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/chamasdavinganca.png" alt=" " /> </a>
+      <p>Chamas da Vingança</p>
+    </div>
+    <div class="film">
+     <a href=""> <img src="img/coracoesemchamas.png" alt=" " /> </a>
+      <p>Corações em Chamas</p>
+    </div>
+    <div class="film">
+     <a href=""> <img src="img/agarotadacapavermelha.png" alt="" /> </a>
+      <p>A garota da capa vermelha</p>
+    </div>
+    <div class="film">
+     <a href=""> <img src="img/incendios.png" alt="" /> </a>
+      <p>Incêndios</p>
+    </div>
+    <div class="film">
+      <a href=""><img src="img/vdevinganca.png" alt=" " /> </a>
+      <p>V de Vingança</p>
+    </div>
+	 
+	
+	 </div>
+   
+</div> </section>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+ </body>
+ 
+ 
+ <footer class="footer">
+		
+		
+		<a href=""><img src="img/redessociais/facebook.png" /> </a>
+		<a href=""><img src="img/redessociais/instagram.png" /></a>
+		<a href=""><img src="img/redessociais/twitter.png" /></a>
+		<a href=""><img src="img/redessociais/tumblr.png" /></a>
+		
+		
+		<div class="footerlogo">
+		
+		<a href="index.html"><img src="img/logo.png" /></a>
+		</div>
+		
+		</footer>
+		
+		
+		<script>
+		function toggleAudio() {
+  var video = document.querySelector('video');
+  if (video.muted) {
+    video.muted = false;
+  } else {
+    video.muted = true;
+  }
+}
+
+	</script>	
+ 
+ 
+ </html>
