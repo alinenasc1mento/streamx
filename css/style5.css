@@ -1,0 +1,130 @@
+
+/* pag de filmes 'unicos' qnd clica em um filme */
+
+
+
+
+.background-filme img{
+	width:100%;
+	height:auto;
+ 
+	
+}
+
+
+    .background-filme {
+      position: absolute;
+      top: 14%;
+      left: 0;
+       z-index: 1;
+    }
+
+.filme-info{
+	padding-top:15%;
+	 
+	  position: absolute;
+    
+    z-index: 3;  
+	
+	
+}
+
+.filme-info p{
+	color:#dadada;
+	font-size:20px;
+	margin-left:2%;
+	margin-bottom:2%;
+	width:30%;
+	
+}
+
+.botoes-container a {
+      text-decoration: none;
+	  color:#dadada;
+    }
+
+.titulo-filme{
+	margin-top:%;
+	margin-left:2%;
+	
+	
+}
+.duracao{
+	 
+	font-size:14px;
+	margin-left:3%;
+	 
+	
+	
+}
+  .botoes-container {
+      margin-left: 2%;
+    }
+
+    .botoes-container button {
+		margin-top:2%;
+		width:12%;
+      margin-left:1%;
+      background-color: #ab1931;
+      color: white;
+      border: none;
+      padding: ;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:150px) and (max-width:600px)
+{
+	
+* {
+			margin: 0px;
+			padding: 0px;
+		}
+		
+		
+
+
+.filme-info p{
+	color:#dadada;
+	font-size:15px;
+	margin-left:2%;
+	margin-bottom:2%;
+	width:100%;
+	
+}
+
+  .botoes-container button {
+		margin-top:2%;
+		width:25%;
+      margin-left:1%;
+      background-color: #ab1931;
+      color: white;
+      border: none;
+      padding: ;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+
+
+.filme-info{
+	margin-top:45%;
+	
+	
+	
+	
+	
+}
