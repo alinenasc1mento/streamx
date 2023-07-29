@@ -1,0 +1,100 @@
+<html>
+
+		<head>
+			<title> Stream X </title>
+			<meta charset="utf-8" />
+			<link rel="stylesheet" href="css/style.css" type="text/css" />
+			 
+			<link rel="stylesheet" href="css/style4.css" type="text/css" /> <!-- pag dos artistas -->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				 
+			 
+			<link rel="icon" href="img/favicon.png">
+			<script src="js/script.js"></script>
+			<script src="js/js.js"></script>
+			<!--<script src="js/scripts.js"></script> -->
+			
+		</head>
+ 
+		
+		<body class="body1">
+		 <header class="header">
+				<div class="logo1">
+			 <a href="index.html"><img src="img/logologo.png" /> </a>
+	
+				</div>
+		 <div class="hamburguer-menu">
+  <div class="hamburguer-icon">&#9776;</div>
+
+				
+				<nav>
+			  <ul class="menu">
+				<li><a href="index.html">Início</a></li>
+				<li><a href="seriados.html">Seriados</a></li>
+				<li><a href="filmes.html">Filmes</a></li>
+				<li><a href="genero.html">Navegar por gênero</a></li>
+				<li><a href="minhalista.html">Minha lista</a></li>
+			  </ul>
+			</nav>	</div>
+			
+			
+			<script>
+  const hamburguerMenu = document.querySelector('.hamburguer-menu');
+  const hamburguerIcon = document.querySelector('.hamburguer-icon');
+
+  hamburguerIcon.addEventListener('click', function () {
+    hamburguerMenu.classList.toggle('active');
+  });
+</script>
+			
+			<div class="perfil1-wrapper">
+      <div class="perfil1">
+        <a href="#"> <img src="img/perfil1.png" alt="Perfil" onclick="toggleMenu()"> </a>
+      </div>
+
+     <div class="menu-perfil" id="menuPerfil">
+    <ul>
+        <li><a href="profile2.html"> <img src="img/perfil2.png" /> <div id="perfil2-link" class="perfil-1"></div></a></li>
+        <li><a href="profile3.html"> <img src="img/perfil3.png" /> <div id="perfil3-link" class="perfil-1 "> <!--class="perfil-1-1" --></div></a></li>
+      
+    </ul>
+</div>
+    </div>
+	 </header>
+	 
+ 	<div class="titulocolletion"> Jennifer Lawrence </div>
+	
+	<div class="filmescolletion">
+	
+	<a href=""><img src="img/joy.png" alt="" /> </a>
+	<a href=""><img src="img/oladobomdavida.png" alt="" /></a>
+	<a href=""><img src="img/jogosvorazes.png" alt="" /></a>
+	<a href=""><img src="img/mae.png" alt="" /></a>
+	<a href=""><img src="img/trapaca.png" alt="" /></a>
+	<a href=""><img src="img/passageiros.png" alt="" /></a>
+	<a href=""><img src="img/xmenapocalypse.png" alt="" /></a>
+	
+	
+	</div>
+	
+	
+	
+	</body>
+	
+	
+	<footer>
+	
+	</footer>
+	
+	 <script>
+        //  carregar os perfis do localStorage quando a página é carregada
+        window.onload = function () {
+            const perfil2Value = localStorage.getItem('perfil2');
+            const perfil3Value = localStorage.getItem('perfil3');
+
+            document.getElementById('perfil2-link').innerText = perfil2Value || 'Perfil 2';
+            document.getElementById('perfil3-link').innerText = perfil3Value || 'Perfil 3';
+        };
+    </script>
+	
+	</html>

@@ -1,0 +1,134 @@
+<html>
+
+		<head>
+			<title> Stream X </title>
+			<meta charset="utf-8" />
+			<link rel="stylesheet" href="css/style.css" type="text/css" />
+			 
+			<link rel="stylesheet" href="css/style5.css" type="text/css" /> <!-- pag filmes qnd clica em um filme-->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				 
+			 
+			<link rel="icon" href="img/favicon.png">
+			<script src="js/script.js"></script>
+			<script src="js/js.js"></script>
+			<!--<script src="js/scripts.js"></script> -->
+			
+		</head>
+ 
+		
+		<body class="body1">
+		 <header class="header">
+				<div class="logo1">
+			 <a href="index.html"><img src="img/logologo.png" /> </a>
+	
+				</div>
+		 <div class="hamburguer-menu">
+  <div class="hamburguer-icon">&#9776;</div>
+
+				
+				<nav>
+			  <ul class="menu">
+				<li><a href="index.html">Início</a></li>
+				<li><a href="seriados.html">Seriados</a></li>
+				<li><a href="filmes.html">Filmes</a></li>
+				<li><a href="genero.html">Navegar por gênero</a></li>
+				<li><a href="minhalista.html">Minha lista</a></li>
+			  </ul>
+			</nav>	</div>
+			
+			
+			<script>
+  const hamburguerMenu = document.querySelector('.hamburguer-menu');
+  const hamburguerIcon = document.querySelector('.hamburguer-icon');
+
+  hamburguerIcon.addEventListener('click', function () {
+    hamburguerMenu.classList.toggle('active');
+  });
+</script>
+			
+			<div class="perfil1-wrapper">
+      <div class="perfil1">
+        <a href="#"> <img src="img/perfil1.png" alt="Perfil" onclick="toggleMenu()"> </a>
+      </div>
+
+     <div class="menu-perfil" id="menuPerfil">
+    <ul>
+        <li><a href="profile2.html"> <img src="img/perfil2.png" /> <div id="perfil2-link" class="perfil-1"></div></a></li>
+        <li><a href="profile3.html"> <img src="img/perfil3.png" /> <div id="perfil3-link" class="perfil-1 "> <!--class="perfil-1-1" --></div></a></li>
+      
+    </ul>
+</div>
+    </div>
+	 </header>
+	 
+	 
+	 
+	 <div class="background-filme"> <div id="banner" class="dispositivo-grande">
+	 <img src="img/inteligenciaartificialbackground.png" />
+	 
+	 </div></div>
+	 
+	 <div class="background-filme"> <div id="banner" class="dispositivo-pequeno">
+	 <img src="img/inteligenciaartificialbackgroundmobile.png" />
+	 
+	 </div> </div>
+	 
+	 <div class="filme-info">
+			<h1><span class="titulo-filme" style="color: #ab1931">A.I - Inteligência Artificial</span><h1>
+
+
+				<p>David, o primeiro menino-robô programado para amar, 
+				é adotado por um funcionário da Cybertronics e sua esposa. 
+				No entanto, uma série de circunstâncias inesperadas dificulta a vida de David.
+				Sem a total aceitação dos humanos ou das máquinas,
+				o menino-robô embarca em uma jornada para descobrir seu verdadeiro mundo.</p>
+
+				<span class="duracao" style="color: #ab1931">duração: 2:26  | ano: 2001 </span>
+					<div class="botoes-container">
+					    <button><a href="https://www.youtube.com/watch?v=_Q-LwQNqjDc&ab_">Trailer</a></button>
+
+					<button> <a href="#">Filme</a></button>
+
+					</div>
+	 
+	 
+	 </div>
+	 
+	 
+	 <style>
+  /* Estilos para dispositivos grandes */
+  @media (max-width: 600px) {
+    .dispositivo-grande {
+      display: none; /* Oculta o elemento com o ID "banner" em dispositivos menores */
+    }
+	 
+  }
+
+  /* Estilos para dispositivos pequenos */
+  @media (min-width: 601px) {
+    .dispositivo-pequeno {
+      display: none; /* Oculta o elemento com o ID "1banner" em dispositivos maiores */
+    }
+  }
+</style> 
+	 
+	 </body>
+	<footer class="footer">
+		
+		
+		<a href=""><img src="img/redessociais/facebook.png" /> </a>
+		<a href=""><img src="img/redessociais/instagram.png" /></a>
+		<a href=""><img src="img/redessociais/twitter.png" /></a>
+		<a href=""><img src="img/redessociais/tumblr.png" /></a>
+		
+		
+		<div class="footerlogo">
+		
+		<a href="index.html"><img src="img/logo.png" /></a>
+		</div>
+		
+		</footer>
+	 
+</html>
+

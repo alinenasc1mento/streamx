@@ -52,8 +52,8 @@
 
        <div class="menu-perfil" id="menuPerfil">
     <ul>
-        <li><a href="profile2.html"> <img src="img/perfil1.png" /> <div id="perfil1-link" class="perfil-1">Perfil 1</div></a></li>
-        <li><a href="profile3.html"> <img src="img/perfil3.png" /> <div id="perfil3-link" class="perfil-1 "> <!--class="perfil-1-1" --> Perfil 3</div></a></li>
+        <li><a href="profile1.html"> <img src="img/perfil1.png" /> <div id="perfil1-link" class="perfil-1"></div></a></li>
+        <li><a href="profile3.html"> <img src="img/perfil3.png" /> <div id="perfil3-link" class="perfil-1 "> <!--class="perfil-1-1" --> </div></a></li>
       
     </ul>
 </div>
@@ -347,7 +347,7 @@
     </div>
     <div class="film">
       <a href=""> <img src="img/assassinatosemrastro.png" alt=" " /> </a>
-      <p>Assassinato sem rastro</p>
+      <p>Assassino sem rastro</p>
     </div>
     <div class="film">
       <a href=""><img src="img/batman.png" alt=" " /> </a>
@@ -403,10 +403,10 @@
 		 <script>
         // Código para carregar os perfis do localStorage quando a página é carregada
         window.onload = function () {
-            const perfil2Value = localStorage.getItem('perfil2');
+            const perfil2Value = localStorage.getItem('perfil1');
             const perfil3Value = localStorage.getItem('perfil3');
 
-            document.getElementById('perfil2-link').innerText = perfil2Value || 'Perfil 2';
+            document.getElementById('perfil1-link').innerText = perfil2Value || 'Perfil 1';
             document.getElementById('perfil3-link').innerText = perfil3Value || 'Perfil 3';
         };
     </script>
