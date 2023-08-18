@@ -3,22 +3,22 @@
 
 .titulocolletion{
 	font-size:40px;
-	color:#dadada;
+	color:#ab1931;
 	margin-left:39%;
 	margin-top:3%;
 	margin-bottom:3%;
 	
 }
-.filmescolletion{
-	
-	margin-left:2%;
+.filmescolletion1{
+	 margin-left:9%;
+	 
 	
 	
 }
 
 .filmescolletion img{
 	margin-left:2px;
-	width:12%;
+	width:14%;
 	height:auto;
 	  border: 2px solid transparent;
   transition: border-color 0.3s ease;
@@ -27,39 +27,40 @@
 .filmescolletion img:hover {
   border-color: #ab1931;
 }
-	
-	
+
+
  
 
 
+.footercollection {
+	margin-top:10.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #1b1f4b;
+  color: #fff;
+}
+
+.footercollection img {
+  width: 30px;  
+  height: 30px;  
+  margin-right: 10px;  
+}
+
+.footerlogo {
+  margin-left: auto;  
+}
+
+.footerlogo img {
+  width: 120px;
+  height: auto;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
+	
+ 
 
 
 
@@ -71,3 +72,28 @@
 			padding: 0px;
 		}
 		
+	.titulocolletion{
+	font-size:30px;
+	color:#ab1931;
+	margin-left:18%;
+	margin-top:8%;
+	margin-bottom:8%;
+	
+}
+
+
+
+	.filmescolletion1{
+	 margin-left:2%;
+	 
+	
+	
+}
+
+.filmescolletion img{
+	margin-left:2px;
+	width:30%;
+	height:auto;
+	  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
